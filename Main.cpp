@@ -13,12 +13,14 @@ int main()
 {
     string fileName;
 
-    float avg;
+    int init_pos = 0;
+    float avg = 0.0;
+
     vector<float> numbers;
 
-    numbers = values(numbers, 0); // initialize the vector of numbers
+    numbers = values(numbers, init_pos); // initialize the vector of numbers
 
-    avg = average(numbers, 0.0, 0); // recursively calculate the average of each number in the vector
+    avg = average(numbers, avg, init_pos); // recursively calculate the average of each number in the vector
     cout << avg << endl;
 }
 
